@@ -38,6 +38,7 @@ h6 {
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+    width:90%;
 }
 
 .head-l {
@@ -50,7 +51,10 @@ h6 {
 
 .head-r img {
     border-radius: 50%;
-    height: 15rem;
+    height: 20rem;
+    position: absolute;
+    top:2rem;
+    right:5%;
 }
 
 .main {
@@ -60,13 +64,13 @@ h6 {
 }
 
 .col-l {
-    flex: 1 1 0;
+    flex: 2 1 0;
     border-right: 1px solid black;
     padding-right: 2rem;
 }
 
 .col-r {
-    flex: 2 1 0;
+    flex: 3 1 0;
 }
 table {
     width: 100%;
@@ -83,4 +87,23 @@ td.first {
 .divider {
     border-top: 1px solid black;
     margin: 1.5rem;
+}
+
+td {
+    height:1.5rem;
+}
+
+li{
+    height:1.5rem;
+}
+
+.webview{
+    display: none;
+}
+
+@media print {
+    .webview{
+        display: block;
+        font-size: 8px;
+    }
 }
